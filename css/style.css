@@ -212,7 +212,7 @@ html {
 
 .section {
 	text-align: center;
-	padding: 50px 80px;
+	padding: 80px 80px;
 }
 
 .section-light {
@@ -231,6 +231,10 @@ html {
 
 .section-dark a {
 	color: #ddd;
+}
+
+.section-partners {
+	padding: 80px 0px !important;
 }
 
 .ptext {
@@ -283,6 +287,7 @@ html {
 }
 
 .organisations-container {
+	padding-top: 30px;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -292,61 +297,28 @@ html {
 	width: 100%;
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 }
 
 .organisation-logo-div {
 	display: flex;
 	flex: 1;
-	padding: 70px;
+	padding: 20px;
 	align-items: center;
+	justify-content: center;
 }
 
 .organisation-logo {
-	max-width:100%;
-	max-height:100%;
-}
-
-/* 
-@media (max-width: 1200) {
-	.organisation-logo-div {
-		padding: 50px;
-	}
-}
-
-@media (max-width: 1050) {
-	.organisation-logo-div {
-		padding: 45px;
-	}
-}
-
-@media (max-width: 950px) {
-	.organisation-logo-div {
-		padding: 40px;
-	}
-}
-@media (max-width: 800px) {
-	.organisation-logo-div {
-		padding: 30px;
-	}
-}
-
-@media (max-width: 650px) {
-	.organisation-logo-div {
-		padding: 20px;
-	}
+    width: auto;
+    height: 100px;
 }
 
 @media (max-width: 500px) {
-	.organisation-logo-div {
-		padding: 20px;
+	.organisation-logo {
+		width: 150px !important;
+		height: auto;
 	}
 }
-
-@media (max-width: 300px) {
-	.organisation-logo-div {
-		padding: 10px;
-	}
-} */
 
 .picons {
 	position: absolute;
