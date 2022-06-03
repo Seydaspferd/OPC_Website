@@ -168,6 +168,13 @@ html {
 	z-index: 3;
 }
 
+.logocontainer2 {
+	background-image: url('../img/opc_newlogo_small.png');
+	background-repeat: no-repeat;
+	width: 64px;
+	height: 64px;
+}
+
 .logocontainer a {
 	position: absolute;
 	width: 100%;
@@ -180,7 +187,10 @@ html {
 	display: flex;
 }
 .tile{
+	display: flex;
 	flex: 1;
+	flex-direction: column;
+	justify-content: space-between
 }
 .tile-number {
 	font-size: 40px;
@@ -210,14 +220,18 @@ html {
 	background:linear-gradient(
 		rgba(0, 0, 0, 0.5), 
 		rgba(0, 0, 0, 0.5)
-	  ), url('../img/homecover.JPG');
+	  ), url('../img/homepage/homepage1.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center;
 	min-height: 100%;
+	display: flex;
+	align-items: center;
+
 }
 
 .pimg2 {
-	background-image: url('../img/home_sectionone.JPG');
+	background-image: url('../img/homepage/homepage2.jpg');
 	min-height: 400px;
 }
 
@@ -233,7 +247,7 @@ html {
 
 @media (max-width: 400px) {
 	.section {
-		padding: 80px 40px;
+		padding: 80px 30px;
 	}
 }
 
@@ -273,23 +287,28 @@ html {
 }
 
 .homepage-title-container {
-	position: absolute;
-	top: 40%;
-	width: 100%;
 	display: flex;
+	flex-direction: column;
+	flex: 1;
+	align-items: center;
 }
 
 .homepage-title {
-	margin-left: 40px;
-	margin-right: 40px;
-	flex: 1;
+	margin: 40px 40px 40px 40px;
 	text-align: center;
 	color: rgb(255, 255, 255);
 	font-size: 30px;
 	letter-spacing: 8px;
 	text-transform: uppercase;
-	text-shadow: 4px 4px 4px #000000;
-	line-height: 45px;
+	line-height: 1.3;
+}
+
+@media (max-width: 500px) {
+	.homepage-title {
+		margin: 40px 20px;
+		font-size: 24px;
+		letter-spacing: 4px;
+	}
 }
 
 .homepage-subtitle-container {
@@ -304,8 +323,19 @@ html {
 	margin-right:40px;
 	color: rgb(255, 255, 255);
 	font-size: 20px;
-	text-shadow: 4px 4px 4px #000000;
 	text-align: center;
+	font-weight: 100;
+	line-height: 1.3;
+}
+
+@media (max-width: 500px) {
+	.homepage-subtitle {
+		margin-left: 20px;
+		margin-right:20px;
+		color: rgb(255, 255, 255);
+		font-size: 16px;
+		text-align: center;
+	}
 }
 
 .organisations-container {
