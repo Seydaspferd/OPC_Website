@@ -1,6 +1,6 @@
 .container {
 	width: 100%;
-	height: 20%;
+	height: 100%;
 }
 
 h2 {
@@ -30,6 +30,13 @@ p {
 	align-items: center;
 }
 
+.homepage-subtitle-container {
+	position: absolute;
+	top: 65%;
+	width: 100%;
+	display: flex;
+}
+
 .homepage-title {
 	margin: 40px 160px;
 	text-align: center;
@@ -53,6 +60,28 @@ p {
 		margin: 40px 20px;
 		font-size: 24px;
 		letter-spacing: 4px;
+	}
+}
+
+.homepage-subtitle {
+	margin: 0px 160px;
+	color: rgb(255, 255, 255);
+	font-size: 20px;
+	text-align: center;
+	font-weight: 100;
+	line-height: 1.3;
+}
+@media (max-width: 1000px) {
+	.homepage-subtitle {
+		margin: 0px 80px;
+	}
+}
+
+@media (max-width: 500px) {
+	.homepage-subtitle {
+		margin-left: 20px;
+		margin-right:20px;
+		font-size: 16px;
 	}
 }
 
@@ -203,8 +232,16 @@ html {
 }
 
 .pimg1 {
-	background-image: url('../img/aboutus_cover.JPG');
+	background:linear-gradient(
+		rgba(0, 0, 0, 0.5), 
+		rgba(0, 0, 0, 0.5)
+	  ), url('../img/aboutus/aboutus_title.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 	min-height: 100%;
+	display: flex;
+	align-items: center;
 }
 
 .pimg2 {
@@ -213,12 +250,12 @@ html {
 }
 
 .pimg3 {
-	background-image: url('../img/aboutus_sectiontwo.JPG');
+	background-image: url('../img/aboutus/mankessim.jpg');
 	min-height: 400px;
 }
 
 .pimg4 {
-	background-image: url('../img/aboutus_sectionthree.jpg');
+	background-image: url('../img/aboutus/team.jpg');
 	min-height: 400px;
 }
 
