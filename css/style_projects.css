@@ -1,7 +1,137 @@
+h2 {
+	font-size: 2.5rem;
+	line-height: 1.3;
+	padding:80px 0px;
+	margin: 0px;
+}
+
 .container {
 	width: 100%;
 	height: 100%;
 }
+
+
+.homepage-title-container {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	align-items: center;
+}
+
+.homepage-title {
+	margin: 40px 160px;
+	text-align: center;
+	color: rgb(255, 255, 255);
+	font-size: 40px;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	line-height: 1.3;
+}
+
+@media (max-width: 1000px) {
+	.homepage-title {
+		margin: 40px 80px;
+		font-size: 30px;
+		letter-spacing: 4px;
+	}
+}
+
+@media (max-width: 500px) {
+	.homepage-title {
+		margin: 40px 20px;
+		font-size: 24px;
+		letter-spacing: 4px;
+	}
+}
+
+.homepage-subtitle-container {
+	position: absolute;
+	top: 65%;
+	width: 100%;
+	display: flex;
+}
+
+.homepage-subtitle {
+	margin: 0px 160px;
+	color: rgb(255, 255, 255);
+	font-size: 20px;
+	text-align: center;
+	font-weight: 100;
+	line-height: 1.3;
+}
+@media (max-width: 1000px) {
+	.homepage-subtitle {
+		margin: 0px 80px;
+	}
+}
+
+@media (max-width: 500px) {
+	.homepage-subtitle {
+		margin-left: 20px;
+		margin-right:20px;
+		font-size: 16px;
+	}
+}
+
+.three-tiles {
+	width: 100%;
+	display: flex;
+	/* padding-bottom: 40px; */
+}
+@media (max-width: 500px) {
+	.three-tiles {
+		flex-direction: column;
+	}
+}
+
+.tile{
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+
+.project-tile{
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 0px 0px 0px 0px;
+}
+
+@media (max-width: 500px) {
+	.project-tile{
+		padding: 0px 0px 40px 0px;
+	}
+}
+
+.homepage-project-img {
+	height: 200px;
+	width: auto;
+}
+
+@media (max-width: 800px) {
+	.homepage-project-img {
+		height: 150px;
+		width: auto;
+	}
+}
+
+@media (max-width: 600px) {
+	.homepage-project-img {
+		height: 120px;
+		width: auto;
+	}
+}
+
+@media (max-width: 500px) {
+	.homepage-project-img {
+		height: 200px;
+		width: auto;
+	}
+}
+
 
 .languageicons {
 	position: absolute;
@@ -158,8 +288,16 @@ html {
 }
 
 .pimg1 {
-	background-image: url('../img/projectscover.JPG');
+	background:linear-gradient(
+		rgba(0, 0, 0, 0.5), 
+		rgba(0, 0, 0, 0.5)
+	  ), url('../img/projects/projects_title.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 	min-height: 100%;
+	display: flex;
+	align-items: center;
 }
 
 .pimg2 {
