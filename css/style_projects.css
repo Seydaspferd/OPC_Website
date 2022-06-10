@@ -1,4 +1,39 @@
 
+.organisations-container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 80px;
+}
+
+.organisations-row {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.organisation-logo-div {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	padding: 30px;
+	align-items: center;
+	justify-content:flex-start;
+}
+
+.organisation-logo {
+    width: 250px;
+    height: 250px;
+}
+
+@media (max-width: 500px) {
+	.organisation-logo {
+		width: 150px !important;
+		height: auto;
+	}
+}
+
 .button-container {
 	padding: 20px;
 }
@@ -245,7 +280,7 @@
 }
 
 i.fab {
-	color: black;
+	color: white;
 }
 
 i.fab:hover {
@@ -260,6 +295,12 @@ i.fab:hover {
 
 .icons a {
 	text-decoration: none;
+}
+
+@media (max-height: 500px) {
+	.icons {
+		font-size: 20px;
+	}
 }
 
 .donatebutton a {
@@ -411,16 +452,35 @@ html {
 }
 
 .picons {
-	position: absolute;
+	/* position: absolute;
 	top: 50%;
-	width: 100%;
+	width: 100%; */
 	text-align: center;
 	color: rgb(255, 255, 255);
 	font-size: 44px;
-	letter-spacing: 8px;
 	text-transform: uppercase;
 
 	line-height: 40px;
+}
+
+.icons {
+	margin-top: 40px;
+	font-size: 20px;
+}
+
+.icons a {
+	text-decoration: none;
+}
+
+.icon {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+@media (max-wdith: 400px) {
+	.icon {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
 }
 
 .ptext .border {
